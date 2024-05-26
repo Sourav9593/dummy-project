@@ -10,7 +10,8 @@
 }
 
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -23,8 +24,8 @@ html {
 nav {
     position: fixed;
     width: 100%;
-    height: 10rem;
-    padding: 2.0rem;
+    height: auto;
+    padding: 1rem 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,6 +49,11 @@ nav {
             li {
                 list-style: none;
                 font-size: 2rem;
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
@@ -56,12 +62,12 @@ nav {
         margin: 5px 0;
         
         input {
-            width: 100px;
+            width: 15rem;
             border: none;
             display: none;
             outline: none;
             border-radius: 50px;
-            padding: 0px 10px;
+            padding: 10px 10px;
         }
     }
 
@@ -82,13 +88,13 @@ nav {
 
 .side-menu{
     display: none;
-    width: 20rem;
+    width: 30rem;
     height: auto;
     padding: 5rem ;
     background-color: rgba(32, 36, 61, 0.9);;
-    position: absolute;
+    position: fixed;
     z-index: 4;
-    top: 10rem;
+    top: 6rem;
     right: 0;
     ul{
         display: flex;
@@ -98,6 +104,11 @@ nav {
         li{
             color: white;
             font-size: 3rem;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }
@@ -113,12 +124,12 @@ nav {
 .section1 {
     background-image: url("./assets/bg1.png");
     padding: 5.0rem 8.0rem;
-
+    
     .content {
         max-width: 50%;
         color: white;
-        margin-bottom: 7.0rem;
-        margin-top: 7rem;
+        margin-bottom: 7rem;
+        margin-top: 8.5rem;
 
         h1 {
             font-size: 10rem;
@@ -154,7 +165,7 @@ nav {
     .text {
         margin: auto;
         max-width: 80.0rem;
-        margin-bottom: 5.0rem;
+        margin-bottom: 3.0rem;
         text-align: center;
 
         h1 {
@@ -275,8 +286,8 @@ nav {
         justify-content: space-evenly;
 
         .card {
-            width: 30.0rem;
-            height: 30.0rem;
+            width: 25.0rem;
+            height: 25.0rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -370,19 +381,19 @@ nav {
     }
 
     img {
-        z-index: 3;
-        width: 30rem;
+        z-index: 2;
+        width: 25rem;
     }
 
     p {
         font-size: 2.5rem;
         font-weight: 300;
         text-align: center;
-        z-index: 3;
+        z-index: 2;
     }
 
     h1 {
-        z-index: 3;
+        z-index:2;
         font-size: 4.5rem;
         font-weight: 600;
     }
@@ -449,25 +460,25 @@ nav {
 
 footer {
     max-width: 100%;
-    height: 70.0rem;
+    height: auto;
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 6.0rem 0 6.0rem;
+    padding: 5rem 6.0rem 5rem 6.0rem;
 
     .left {
         max-width: 40%;
 
         h3 {
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             font-weight: 300;
             margin-bottom: 2.0rem;
         }
 
         p {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             font-weight: 200;
         }
 
@@ -491,20 +502,20 @@ footer {
 
     .right {
         display: flex;
-        /* gap: 10rem; */
+        gap: 5rem;
 
 
         .heading {
             max-width: 20.0rem;
 
             h3 {
-                font-size: 3.5rem;
+                font-size: 3rem;
                 font-weight: 300;
                 margin-bottom: 2.0rem;
             }
 
             p {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 font-weight: 200;
             }
 
@@ -515,10 +526,10 @@ footer {
 
 @media (min-width:1440px) {
     html {
-        font-size: 80%;
+        font-size: 70%;
 
         img {
-            width: 80%;
+            width: 70%;
         }
 
         .section3 {
