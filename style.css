@@ -49,8 +49,8 @@ nav {
             li {
                 list-style: none;
                 font-size: 2rem;
-                
-                a{
+
+                a {
                     text-decoration: none;
                     color: white;
                 }
@@ -60,7 +60,7 @@ nav {
 
     .input {
         margin: 5px 0;
-        
+
         input {
             width: 15rem;
             border: none;
@@ -86,26 +86,28 @@ nav {
 
 }
 
-.side-menu{
+.side-menu {
     display: none;
     width: 30rem;
     height: auto;
-    padding: 5rem ;
-    background-color: rgba(32, 36, 61, 0.9);;
+    padding: 7rem 7rem 20rem 5rem;
+    background-color: rgba(32, 36, 61, 0.9);
     position: fixed;
     z-index: 4;
     top: 6rem;
     right: 0;
-    ul{
+
+    ul {
         display: flex;
         flex-direction: column;
         align-items: self-start;
         gap: 3rem;
-        li{
+
+        li {
             color: white;
             font-size: 3rem;
 
-            a{
+            a {
                 text-decoration: none;
                 color: white;
             }
@@ -124,7 +126,7 @@ nav {
 .section1 {
     background-image: url("./assets/bg1.png");
     padding: 5.0rem 8.0rem;
-    
+
     .content {
         max-width: 50%;
         color: white;
@@ -393,7 +395,7 @@ nav {
     }
 
     h1 {
-        z-index:2;
+        z-index: 2;
         font-size: 4.5rem;
         font-weight: 600;
     }
@@ -615,16 +617,19 @@ footer {
             width:30%;
         } */
         nav {
+            height: 10rem;
             .center {
                 display: none;
             }
-            .input{
-                input{
+
+            .input {
+                input {
                     font-size: 2rem;
                 }
             }
-            .menu{
-                i{
+
+            .menu {
+                i {
                     display: block;
                 }
             }
